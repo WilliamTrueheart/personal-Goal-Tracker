@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 3%;
+}
+
+body {
+  width: 100vw;
+}
+
+main {
+  width: 100%;
+}
+
+#dashboard_Wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #191919;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0%;
+}
+
+#goalStatistics_Wrapper {
+  width: 60%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #698cc4, #3d72c2 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0%;
+}
+
+#goalStatistics_UI {
+  width: 90%;
+  height: 90%;
+  background-color: #191919;
+  color: white;
+  position: relative;
+}
+
+#goalStatistics_UI h2 {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 5%;
+}
+
+#goalStatistics_UI_Container {
+  width: 90%;
+  height: 80%;
+  background-color: #373737;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  gap: .5%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  padding: 1%;
+}
+
+.goalStatistics_UI_Item {
+  width: 33%;
+  height: 19.6%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#262626), to(#1c1c1c));
+  background-image: linear-gradient(90deg, #262626, #1c1c1c 100%);
+  color: white;
+  position: relative;
+  padding: 1%;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.goalStatistics_UI_Item:hover {
+  opacity: 1;
+}
+
+.goalTitle {
+  font-size: .8rem;
+}
+
+.goalData {
+  font-size: .6rem;
+  position: absolute;
+  bottom: 20%;
+}
+
+#inputForm_Wrapper {
+  width: 40%;
+  height: 100%;
+  background-color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: solid #191919 1rem;
+  border-radius: 0;
+}
+
+.formTitle {
+  margin-top: 15vh;
+  color: white;
+}
+
+form {
+  width: 80%;
+  height: 60%;
+  background-image: linear-gradient(45deg, #2d2d2d, #343434 70%);
+  position: absolute;
+  bottom: 15%;
+  font-size: .85rem;
+  color: white;
+  padding: 10px;
+}
+
+form ul {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+form input {
+  position: relative;
+  top: 2px;
+}
+
+#submitDailyGoals {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #0d0d0d;
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submitDailyGoals:hover {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

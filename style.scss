@@ -1,0 +1,150 @@
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 3%;
+}
+
+body {
+    width:100vw;
+}
+
+main {
+    width: 100%;
+}
+
+//main dashboard
+#dashboard_Wrapper {
+    width:100%;
+    height:100vh;
+    background-color: rgb(25, 25, 25);
+    position: relative;
+    display: flex;
+    border-radius: 0%;
+}
+
+//left side of dashboard
+#goalStatistics_Wrapper {
+    width:60%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgb(105, 140, 196), rgb(61, 114, 194) 50%);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0%;
+}
+
+#goalStatistics_UI {
+    width:90%;
+    height:90%;
+    background-color: rgb(25, 25, 25);
+    color:white;
+    position: relative;
+
+    h2 {
+      position: absolute;
+      transform: translateX(-50%);
+      left:50%;
+      top:5%;
+    }
+}
+
+#goalStatistics_UI_Container {
+    width:90%;
+    height:80%;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap:.5%;
+    bottom:5%;
+    transform: translateX(-50%);
+    left:50%;
+    padding:1%;
+}
+
+//blw are the individual goal items in the Container UI
+.goalStatistics_UI_Item {
+    width:33%;
+    height:19.6%;
+    background-image: linear-gradient(90deg, rgb(38, 38, 38),rgb(28, 28, 28) 100%);
+    color:rgb(255, 255, 255);
+    position: relative;
+    padding: 1%;
+    opacity: .8;
+    cursor: pointer;
+
+    &:hover {opacity: 1;}
+}
+
+.goalTitle {
+    font-size: .8rem;
+}
+
+.goalData {
+    font-size: .6rem;
+    position: absolute;
+    bottom:20%;
+}
+
+
+//right side of dashboard
+#inputForm_Wrapper { 
+    width:40%;
+    height:100%;
+    background-color:rgb(33, 33, 33);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-left:solid rgb(25, 25, 25) 1rem;
+    border-radius: 0;
+}
+
+.formTitle {
+    margin-top:15vh;
+    color:white;
+}
+
+form {
+    width:80%;
+    height:60%;
+    background-image: linear-gradient(45deg, rgb(45, 45, 45), rgb(52, 52, 52) 70%);
+    position: absolute;
+    bottom:15%;
+    font-size: .85rem;
+    color:white;
+    padding: 10px;
+
+    ul {
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    input {
+        position: relative;
+        top:2px;
+    }
+
+}
+
+// submit button after checkbox form has been completed
+#submitDailyGoals {
+    width:max-content;
+    height:max-content;
+    background-color: rgb(13, 13, 13);
+    color:white;
+    position: absolute;
+    bottom:2%;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {background-color: green;}
+}
+

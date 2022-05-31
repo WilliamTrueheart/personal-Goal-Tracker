@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="dashboard_Wrapper">
+            <div id="goalStatistics_Wrapper">
+                <div id="goalStatistics_UI">
+                    <h2>Statistics</h2>
+                    <div id="goalStatistics_UI_Container">
+                        <div id="goalStatistics_UI_Item1" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Morning Hygiene</h3>
+                            <h4 class="goalData" id="goalData_1">you have completed this goal <span id="goalData_1_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item2" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Prayer</h3>
+                            <h4 class="goalData" id="goalData_2">you have completed this goal <span id="goalData_2_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item13" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Clean Room before leaving Home</h3>
+                            <h4 class="goalData" id="goalData_13"> you have completed this goal<span id="goalData_13_Value">0</span> times. </h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item3" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Meal 1</h3>
+                            <h4 class="goalData" id="goalData_3">you have completed this goal <span id="goalData_3_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item4" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Meal 2</h3>
+                            <h4 class="goalData" id="goalData_4">you have completed this goal <span id="goalData_4_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item5" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Meal 3</h3>
+                            <h4 class="goalData" id="goalData_5">you have completed this goal <span id="goalData_5_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item6" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Meal 4</h3>
+                            <h4 class="goalData" id="goalData_6">you have completed this goal <span id="goalData_6_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item7" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Work 6 hours</h3>
+                            <h4 class="goalData" id="goalData_7">you have completed this goal <span id="goalData_7_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item8" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Workout</h3>
+                            <h4 class="goalData" id="goalData_8">you have completed this goal <span id="goalData_8_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item9" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Vitamins/Supplements</h3>
+                            <h4 class="goalData" id="goalData_9">you have completed this goal <span id="goalData_9_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item10" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Study Programming 30 min</h3>
+                            <h4 class="goalData" id="goalData_10">you have completed this goal <span id="goalData_10_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item11" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Evening Hygiene</h3>
+                            <h4 class="goalData" id="goalData_11">you have completed this goal <span id="goalData_11_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item12" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle">Water and Tea Only</h3>
+                            <h4 class="goalData" id="goalData_12">you have completed this goal <span id="goalData_12_Value">0</span> times.</h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item14" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle"></h3>
+                            <h4 class="goalData" id="goalData_14"> <span id="goalData_14_Value"></span> </h4>
+                        </div>
+
+                        <div id="goalStatistics_UI_Item15" class="goalStatistics_UI_Item">
+                            <h3 class="goalTitle"></h3>
+                            <h4 class="goalData" id="goalData_15"> <span id="goalData_15_Value"></span> </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inputForm_Wrapper">
+                <h3 class="formTitle"> input goals </h3>
+                <form name="inputGoals" action="">
+                    <ul>
+                        <!-- These are the inputs from your goals -->
+                        <h3 id="input_1" class="checkbox_Text"> <input type="checkbox"> Morning Hygiene</h3>
+                        <h3 id="input_1" class="checkbox_Text"> <input type="checkbox"> Clean room before leaving home</h3>
+                        <h3 id="input_2" class="checkbox_Text"> <input type="checkbox"> Prayer</h3>
+                        <h3 id="input_3" class="checkbox_Text"> <input type="checkbox"> Meal 1</h3>
+                        <h3 id="input_4" class="checkbox_Text"> <input type="checkbox"> Meal 2</h3>
+                        <h3 id="input_5" class="checkbox_Text"> <input type="checkbox"> Meal 3</h3>
+                        <h3 id="input_6" class="checkbox_Text"> <input type="checkbox"> Meal 4</h3>
+                        <h3 id="input_7" class="checkbox_Text"> <input type="checkbox"> Work 6 hours</h3>
+                        <h3 id="input_8" class="checkbox_Text"> <input type="checkbox"> Workout</h3>
+                        <h3 id="input_9" class="checkbox_Text"> <input type="checkbox"> Vitamins/Supplements</h3>
+                        <h3 id="input_10" class="checkbox_Text"> <input type="checkbox"> Study Programming 30 min</h3>
+                        <h3 id="input_11" class="checkbox_Text"> <input type="checkbox"> Evening Hygiene</h3>
+                        <h3 id="input_12" class="checkbox_Text"> <input type="checkbox"> Water and Tea Only</h3>
+                    </ul>
+                    <button id="submitDailyGoals" type="button">submit : daily</button>
+                </form>
+            </div>
+        </div> <!--End of dashboard-->
+    </main>
+</body>
+</html>
